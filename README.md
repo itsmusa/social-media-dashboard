@@ -37,7 +37,7 @@ This is my solution
 ### Links
 
 - Solution URL: [Source code](https://github.com/itsmusa/social-media-dashboard)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [live site URL](https://social-media-dashboard-itsmusa.vercel.app/)
 
 
 ## My process
