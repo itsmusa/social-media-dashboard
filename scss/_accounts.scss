@@ -1,0 +1,50 @@
+.accounts {
+    display: grid;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+
+    @include breakpoint-up(large) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @include breakpoint-up(mega) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.account {
+    background: var(--card-bg);
+    border-radius: 0.5rem;
+    overflow: hidden;
+
+    &__highlight {
+        height: 0.3125rem;
+    }
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+        margin-bottom: 1rem;
+    }
+
+    &__count {
+        font-size: 3.5rem;
+        line-height: 1;
+        font-weight: 700;
+    }
+
+    &__text {
+        text-transform: uppercase;
+        letter-spacing: 0.25rem;
+        margin-bottom: 1.5rem;
+    }
+}

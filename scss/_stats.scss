@@ -1,0 +1,48 @@
+.stats {
+
+    &__title {
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &__accounts {
+        display: grid;
+        gap: 1rem;
+
+        @include breakpoint-up(mega) {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    &__account {
+        display: grid;
+        gap: 1rem;
+
+        @include breakpoint-up(large) {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    &__info {
+        display: grid;
+        grid-template-columns: auto auto;
+        row-gap: 1rem;
+        background: var(--card-bg);
+        padding: 1rem;
+        border-radius: 0.5rem;
+    }
+
+    &__text {}
+
+    &__icon {
+        justify-self: end;
+    }
+
+    &__count {
+        font-size: 2rem;
+    }
+
+    &__growth {
+        justify-self: end;
+    }
+}

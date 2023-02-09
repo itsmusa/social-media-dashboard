@@ -1,0 +1,282 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  min-height: 100vh;
+  background: linear-gradient(var(--body-bg-top) 25%, var(--body-bg) 25%);
+  transition: 0.3s ease-in-out;
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.container {
+  width: 90%;
+  max-width: 64em;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.hr {
+  height: 1px;
+  background-color: var(--sm-text-color);
+  opacity: 0.3;
+}
+
+h1, h2 {
+  line-height: 1;
+  font-weight: 700;
+  transition: 0.3s ease-in-out;
+}
+
+.sm-text {
+  font-size: 0.875rem;
+  color: var(--sm-text-color);
+  transition: 0.3s ease-in-out;
+}
+
+.lg-text {
+  color: var(--lg-text-color);
+  font-weight: 700;
+  transition: 0.3s ease-in-out;
+}
+
+.up {
+  color: hsl(163deg, 72%, 41%);
+}
+
+.down {
+  color: hsl(356deg, 69%, 56%);
+}
+
+.stat {
+  font-size: 0.75rem;
+  font-weight: 700;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 0.225rem;
+}
+.stat i {
+  font-size: 0.5rem;
+  margin-top: 0.125rem;
+}
+
+.hover {
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.hover:hover {
+  background: #353e5f;
+}
+
+body {
+  --body-bg: hsl(230, 17%, 14%);
+  --body-bg-top: hsl(232, 19%, 15%);
+  --theme-btn-bg: linear-gradient(90deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  --card-bg: hsl(228, 28%, 20%);
+  --sm-text-color: hsl(228, 34%, 66%);
+  --lg-text-color: hsl(0, 0%, 100%);
+}
+
+body.light-theme {
+  --body-bg: hsl(0, 0%, 100%);
+  --body-bg-top: hsl(225, 100%, 98%);
+  --theme-btn-bg: hsl(230, 22%, 74%);
+  --card-bg: hsl(227, 47%, 96%);
+  --sm-text-color: hsl(228, 12%, 44%);
+  --lg-text-color: hsl(230, 17%, 14%);
+}
+body.light-theme .hover:hover {
+  background: #ced5ed;
+}
+
+.change-theme {
+  display: flex;
+  width: 2.5rem;
+  background: var(--theme-btn-bg);
+  padding: 0.125rem;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.change-theme.dark {
+  color: var(--body-bg);
+}
+.change-theme.dark:hover {
+  color: white;
+}
+
+.change-theme.light {
+  justify-content: end;
+  color: var(--body-bg);
+}
+.change-theme.light:hover {
+  background: linear-gradient(90deg, hsl(210deg, 78%, 56%), hsl(146deg, 68%, 55%));
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+@media (min-width: 48em) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.header__title {
+  font-size: 1.75rem;
+  margin-bottom: 0.125rem;
+}
+.header__theme {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.header .hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+@media (min-width: 48em) {
+  .header .hr {
+    display: none;
+  }
+}
+
+.accounts {
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+@media (min-width: 40em) {
+  .accounts {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 64em) {
+  .accounts {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.account {
+  background: var(--card-bg);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.account__highlight {
+  height: 0.3125rem;
+}
+.account__details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.account__link {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-bottom: 1rem;
+}
+.account__count {
+  font-size: 3.5rem;
+  line-height: 1;
+  font-weight: 700;
+}
+.account__text {
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.stats__title {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+.stats__accounts {
+  display: grid;
+  gap: 1rem;
+}
+@media (min-width: 64em) {
+  .stats__accounts {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.stats__account {
+  display: grid;
+  gap: 1rem;
+}
+@media (min-width: 40em) {
+  .stats__account {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.stats__info {
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 1rem;
+  background: var(--card-bg);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.stats__icon {
+  justify-self: end;
+}
+.stats__count {
+  font-size: 2rem;
+}
+.stats__growth {
+  justify-self: end;
+}/*# sourceMappingURL=style.css.map */
