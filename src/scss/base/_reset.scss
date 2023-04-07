@@ -31,6 +31,8 @@ body {
     text-rendering: optimizeSpeed;
     line-height: 1.5;
     font-family: 'Inter', sans-serif;
+    background-color: var(--bg);
+    transition: .3s ease-in-out;
 }
 
 a {

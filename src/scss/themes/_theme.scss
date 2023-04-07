@@ -1,0 +1,46 @@
+
+/* DEFAULT COLOR SCHEME */
+:root {
+    color-scheme: light;
+
+    --bg: var(--bg-light);
+    --bg-top: var(--bg-top-light);
+    --card-bg: var(--card-bg-light);
+    --text1: var(--text1-light);
+    --text2: var(--text2-light);
+    --toggle-bg: var(--toggle-bg-light);
+}
+
+/* PREFERS DARK MODE */
+@media (prefers-color-scheme: dark) {
+    :root {
+    --bg: var(--bg-dark);
+    --bg-top: var(--bg-top-dark);
+    --card-bg: var(--card-bg-dark);
+    --text1: var(--text1-dark);
+    --text2: var(--text2-dark);
+    --toggle-bg: var(--toggle-bg-dark);
+    }
+}
+
+[color-scheme="light"] {
+    color-scheme: light;
+
+    --bg: var(--bg-light);
+    --bg-top: var(--bg-top-light);
+    --card-bg: var(--card-bg-light);
+    --text1: var(--text1-light);
+    --text2: var(--text2-light);
+    --toggle-bg: var(--toggle-bg-light);
+}
+
+[color-scheme="dark"] {
+    color-scheme: dark;
+
+    --bg: var(--bg-dark);
+    --bg-top: var(--bg-top-dark);
+    --card-bg: var(--card-bg-dark);
+    --text1: var(--text1-dark);
+    --text2: var(--text2-dark);
+    --toggle-bg: var(--toggle-bg-dark);
+}
