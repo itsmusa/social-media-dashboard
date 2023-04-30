@@ -73,7 +73,6 @@ in future developments, the app should be able to pick the default theme from th
 
 - Website - [Musa Magwaza](https://www.github.com/itsmusa)
 - Frontend Mentor - [@itsmusa](https://www.frontendmentor.io/profile/itsmusa)
-- Twitter - [@flawedgoat](https://www.twitter.com/flowedgoat)
 
 
 ## Acknowledgments
