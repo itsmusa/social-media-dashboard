@@ -2,7 +2,8 @@
     /* PRIMARY */
     --limeGreen: hsl(163, 72%, 41%);
     --brightRed: hsl(356, 69%, 56%);
-    --gradient: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+    --gradient: linear-gradient(90deg, hsl(210, 78%, 56%) 0%, hsl(146, 68%, 55%) 50%);
+    --gradient-bg: hsl(146, 68%, 55%);
 
     /* LIGHT LIGHT */
     --bg-light: hsl(0, 0%, 100%); /* BG */
@@ -20,6 +21,13 @@
     --text1-dark: hsl(0, 0%, 100%); /* Text 1 */
     --text2-dark: hsl(228, 34%, 66%); /* Text 2 */
 
-    --toggle-bg-dark: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%); /* toggle BG */
+    --toggle-bg-dark: linear-gradient(90deg, hsl(210, 78%, 56%) 0%, hsl(146, 68%, 55%) 50%); /* toggle BG */
+}
 
+.text1 {
+    color: var(--text1);
+}
+
+.text2 {
+    color: var(--text2);
 }
